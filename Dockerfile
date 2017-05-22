@@ -24,7 +24,7 @@ RUN docker-php-ext-install \
 # Install pecl extensions
 RUN pecl install mongodb xdebug && \
     docker-php-ext-enable mongodb && \
-    docker-php-ext-enable xdebug && \
+    docker-php-ext-enable xdebug
 
 # Configure php
 RUN echo "date.timezone = UTC" >> /usr/local/etc/php/php.ini
