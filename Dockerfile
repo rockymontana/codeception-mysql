@@ -7,7 +7,5 @@ RUN docker-php-ext-install \
     mysqli  \
     pdo  \
     pdo_mysql
-
-# Prepare host-volume working directory
-RUN mkdir /project
+    
 WORKDIR /project
