@@ -17,8 +17,8 @@ RUN apt-get update && \
 RUN docker-php-ext-install \
     bcmath \
     zip \
-    mysqli
-    pdo
+    mysqli  \
+    pdo  \
     pdo_mysql
 
 # Install pecl extensions
